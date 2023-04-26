@@ -56,3 +56,8 @@ await fetch('http://itenium.synology.me:9100/api/config/security').then(res => r
 
 Login a form with Autohotkey?  
 https://itenium.be/blog/productivity/autohotkey-use-case/
+
+Other:
+
+- `CAPSLOCK & X`: Google the selected text
+- `CAPSLOCK & W`: Open selected URL in Chrome
