@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "a4a32650-cd12-4f75-9c28-e1df2cfa90bb",
+		"name": "REST-JWT-DevTools",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19973091"
+	},
+	"item": [
+		{
+			"name": "0. confac - GET Security",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://itenium.synology.me:9100/api/config/security",
+					"protocol": "http",
+					"host": [
+						"itenium",
+						"synology",
+						"me"
+					],
+					"port": "9100",
+					"path": [
+						"api",
+						"config",
+						"security"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1. confac - GET Config",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://itenium.synology.me:9100/api/config",
+					"protocol": "http",
+					"host": [
+						"itenium",
+						"synology",
+						"me"
+					],
+					"port": "9100",
+					"path": [
+						"api",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. confac - GET Config with auth",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYzZmJkMTFiZjgxMGM1MThlOWMxZDBkZSIsImVtYWlsIjoid291dGVyLnZhbi5zY2hhbmRldmlqbEBpdGVuaXVtLmJlIiwibmFtZSI6IlZhbiBTY2hhbmRldmlqbCIsImFsaWFzIjoiV291dGVyIiwiZmlyc3ROYW1lIjoiV291dGVyIiwiYWN0aXZlIjp0cnVlLCJhdWRpdCI6eyJjcmVhdGVkT24iOiIyMDIzLTAyLTI2VDIxOjM3OjMxLjYyM1oiLCJjcmVhdGVkQnkiOiIiLCJtb2RpZmllZE9uIjoiMjAyMy0wMi0yNlQyMTo0MToxNC42NDFaIiwibW9kaWZpZWRCeSI6IjYzZmJkMTFiZjgxMGM1MThlOWMxZDBkZSJ9LCJyb2xlcyI6WyJhZG1pbiJdfSwiaWF0IjoxNjgyNTMxMDgwLCJleHAiOjE2ODI1NDkwODB9.4FbZK_imJIcIEIdD65wJ3ZmTa0FM8a03uIWCV9gSBXg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://itenium.synology.me:9100/api/config",
+					"protocol": "http",
+					"host": [
+						"itenium",
+						"synology",
+						"me"
+					],
+					"port": "9100",
+					"path": [
+						"api",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. confac - POST Project",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjYzZmJkMTFiZjgxMGM1MThlOWMxZDBkZSIsImVtYWlsIjoid291dGVyLnZhbi5zY2hhbmRldmlqbEBpdGVuaXVtLmJlIiwibmFtZSI6IlZhbiBTY2hhbmRldmlqbCIsImFsaWFzIjoiV291dGVyIiwiZmlyc3ROYW1lIjoiV291dGVyIiwiYWN0aXZlIjp0cnVlLCJhdWRpdCI6eyJjcmVhdGVkT24iOiIyMDIzLTAyLTI2VDIxOjM3OjMxLjYyM1oiLCJjcmVhdGVkQnkiOiIiLCJtb2RpZmllZE9uIjoiMjAyMy0wMi0yNlQyMTo0MToxNC42NDFaIiwibW9kaWZpZWRCeSI6IjYzZmJkMTFiZjgxMGM1MThlOWMxZDBkZSJ9LCJyb2xlcyI6WyJhZG1pbiJdfSwiaWF0IjoxNjgyNTMxMDgwLCJleHAiOjE2ODI1NDkwODB9.4FbZK_imJIcIEIdD65wJ3ZmTa0FM8a03uIWCV9gSBXg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\": \"63fcf592a79451149c0a934d\",\r\n  \"consultantId\": \"63fbda1c8d40150a64bcbcd0\",\r\n  \"startDate\": \"2023-01-01T00:00:00.000Z\",\r\n  \"client\": {\r\n    \"clientId\": \"63fcf50e71f92b405cda45a1\",\r\n    \"defaultInvoiceLines\": [\r\n      {\r\n        \"desc\": \"Consultancy diensten\",\r\n        \"price\": 15000,\r\n        \"amount\": 20,\r\n        \"tax\": 21,\r\n        \"type\": \"daily\",\r\n        \"sort\": 0\r\n      }\r\n    ],\r\n    \"advancedInvoicing\": true,\r\n    \"ref\": null\r\n  },\r\n  \"projectMonthConfig\": {\r\n    \"changingOrderNr\": false,\r\n    \"timesheetCheck\": true,\r\n    \"inboundInvoice\": false\r\n  },\r\n  \"contract\": { \"status\": \"NotNeeded\", \"notes\": \"\" },\r\n  \"audit\": {\r\n    \"createdOn\": \"2022-07-05T02:34:53.404Z\",\r\n    \"createdBy\": \"Dayna\",\r\n    \"modifiedOn\": \"2023-04-26T21:16:23.304Z\",\r\n    \"modifiedBy\": \"63fbd11bf810c518e9c1d0de\"\r\n  },\r\n  \"endDate\": \"2023-03-03T07:43:38.570Z\",\r\n  \"partner\": null\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://itenium.synology.me:9100/api/projects",
+					"protocol": "http",
+					"host": [
+						"itenium",
+						"synology",
+						"me"
+					],
+					"port": "9100",
+					"path": [
+						"api",
+						"projects"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
