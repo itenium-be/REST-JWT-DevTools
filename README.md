@@ -51,3 +51,8 @@ await fetch('http://itenium.synology.me:9100/api/config/security').then(res => r
 - https://jwt.io/
 - https://www.base64decode.org/
 - https://hoppscotch.io/
+
+## Done?
+
+Login a form with Autohotkey?  
+https://itenium.be/blog/productivity/autohotkey-use-case/
