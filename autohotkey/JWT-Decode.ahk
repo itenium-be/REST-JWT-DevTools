@@ -4,7 +4,7 @@ StringCaseSense On
 Base64Chars = ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 
 
-; AltGr + Alt + B
+; AltGr + B
 ; How to define a hotkey:
 ; https://itenium.be/blog/productivity/autohotkey-hotkeys/
 <^>!b::
